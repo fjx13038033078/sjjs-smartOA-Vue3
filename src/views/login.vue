@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <el-form ref="loginRef" :model="loginForm" :rules="loginRules" class="login-form">
-      <h3 class="title">RuoYi-Flowable-Plus多租户管理系统</h3>
+      <h3 class="title">山西数据技术公司数智化管理系统</h3>
       <el-form-item prop="tenantId" v-if="tenantEnabled">
         <el-select v-model="loginForm.tenantId" filterable placeholder="请选择/输入公司名称" style="width: 100%">
           <el-option v-for="item in tenantList" :key="item.tenantId" :label="item.companyName" :value="item.tenantId"> </el-option>
@@ -39,7 +39,7 @@
     </el-form>
     <!--  底部  -->
     <div class="el-login-footer">
-      <span>Copyright © 2018-2023 疯狂的狮子Li All Rights Reserved.</span>
+      <span>Copyright © 2023 山西数据技术公司</span>
     </div>
   </div>
 </template>
@@ -50,7 +50,7 @@ import Cookies from 'js-cookie';
 import { encrypt, decrypt } from '@/utils/jsencrypt';
 import { useUserStore } from '@/store/modules/user';
 import { LoginData, TenantVO } from '@/api/types';
-import { FormRules } from 'element-plus';
+import { ElForm, FormRules } from 'element-plus';
 import { to } from 'await-to-js';
 
 const userStore = useUserStore();

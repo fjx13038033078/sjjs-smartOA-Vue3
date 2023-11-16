@@ -35,7 +35,7 @@ defineProps({
     }
 })
 
-const title = ref('RuoYi-Flowable-Plus');
+const title = ref('数智化管理系统');
 const settingsStore = useSettingsStore();
 const sideTheme = computed(() => settingsStore.sideTheme);
 </script>
