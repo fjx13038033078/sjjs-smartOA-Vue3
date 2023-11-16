@@ -39,7 +39,7 @@
     </el-form>
     <!--  底部  -->
     <div class="el-login-footer">
-      <span>Copyright © 2018-2023 疯狂的狮子Li All Rights Reserved.</span>
+      <span>Copyright © 2023 山西数据技术公司</span>
     </div>
   </div>
 </template>
